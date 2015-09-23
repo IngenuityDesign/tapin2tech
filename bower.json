@@ -1,0 +1,24 @@
+{
+  "name": "visainterns",
+  "version": "0.0.0",
+  "authors": [
+    "Paul Caciula <paul@ingenuitydesign.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5",
+    "respond": "~1.4.2",
+    "modernizr": "~2.8.3",
+    "html5shiv": "~3.7.3",
+    "fontawesome": "~4.4.0",
+    "animate.css": "~3.4.0",
+    "jquery-touchswipe": "~1.6.9"
+  }
+}

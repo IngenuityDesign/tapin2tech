@@ -1,0 +1,78 @@
+$paypal-font-path: 'font/' !default;
+
+@function paypal-font-url($font) {
+    @return url($paypal-font-path + $font);
+}
+
+/* Webfont: PayPalForward-LightItalic */@font-face {
+    font-family: 'PayPalForwardLight';
+    src: paypal-font-url('PayPalForward-LightItalic.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-LightItalic.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-LightItalic.svg#PayPalForward-LightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: PayPalForward-Light */@font-face {
+    font-family: 'PayPalForwardLight';
+    src: paypal-font-url('PayPalForward-Light.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-Light.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-Light.svg#PayPalForward-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: PayPalForward-Bold */@font-face {
+    font-family: 'PayPalForward';
+    src: paypal-font-url('PayPalForward-Bold.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-Bold.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-Bold.svg#PayPalForward-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: PayPalForward-BoldItalic */@font-face {
+    font-family: 'PayPalForward';
+    src: paypal-font-url('PayPalForward-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-BoldItalic.svg#PayPalForward-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: PayPalForward-Italic */@font-face {
+    font-family: 'PayPalForward';
+    src: paypal-font-url('PayPalForward-Italic.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-Italic.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-Italic.svg#PayPalForward-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: PayPalForward-Regular */@font-face {
+    font-family: 'PayPalForward';
+    src: paypal-font-url('PayPalForward-Regular.eot'); /* IE9 Compat Modes */
+    src: paypal-font-url('PayPalForward-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         paypal-font-url('PayPalForward-Regular.woff') format('woff'), /* Modern Browsers */
+         paypal-font-url('PayPalForward-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         paypal-font-url('PayPalForward-Regular.svg#PayPalForward-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

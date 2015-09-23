@@ -1,0 +1,149 @@
+@mixin desktop {
+	@media (min-width: $screen-md-min) {
+		@content;
+	}
+}
+
+@mixin lg-desktop{
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+@mixin iphone5-portrait{
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 568px) 
+  and (orientation : portrait) { 
+    @content; 
+  }
+      
+}
+
+@mixin iphone6-portrait{
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : portrait) {
+    @content;
+  }
+}
+
+@mixin iphone6-landscape{
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : landscape) {
+    @content;
+  }
+}
+@mixin xl-desktop{
+  @media (min-width: 1730px) {
+    @content;
+  }
+}
+@mixin laptop{
+  @media (min-width:1100px) and (max-width:1450px) {
+    @content;
+  }
+}
+
+@mixin not-desktop {
+  @media (max-device-width:900px) {
+    @content;
+  }
+}
+
+@mixin landscape{
+  @media (max-device-width:1024px) and (orientation:landscape){
+    @content;
+  }
+}
+
+@mixin phone-landscape{
+  @media (max-device-width : 736px) and (orientation:landscape) {
+    @content;
+  }
+}
+
+@mixin phone-portrait{
+  @media (max-device-width : 736px) and (orientation:portrait) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-device-width: 768px) and (max-device-width:1024px) {
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media (min-device-width: 768px) and (max-device-width:1024px) and (orientation:landscape){
+    @content;
+  }
+}
+
+@mixin tablet-portrait{
+  @media (min-device-width: 768px) and (max-device-width:1024px) and (orientation:portrait) {
+    @content;
+  }
+}
+
+@mixin background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin thick {
+  font-weight: bold;
+  font-family:helvetica, arial, sans-serif;
+}
+
+@mixin enshadow {
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.37);
+}
+
+@mixin fa($icon,$size : "2") {
+    @extend .fa;
+    @extend .fa-#{$icon};
+    font-size: #{$size}em;
+}
+
+@mixin bracketed($fontsize:33px,$padding:10px){
+   &:before,&:after{
+    content:"[";
+    color:$yellow;
+    font-size:#{$fontsize};
+    position:relative;
+    padding-right:#{$padding};
+   }
+   &:after{content:"]";padding-left:#{$padding}; padding-right:0;}
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
